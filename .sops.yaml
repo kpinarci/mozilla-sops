@@ -1,0 +1,6 @@
+creation_rules:
+  - path_regex: .*\.(yaml|yml|env|json|ini)$
+    encrypted_regex: '(?i).*(id|token|ca|crt|password|passwort|key|secret).*'
+    key_groups:
+      - age:
+          - age14xzty9x3rse6nsqhnrwjc3fwln749swz52xr6c3aqzdj5xgxsawq3g7fnr

@@ -58,7 +58,7 @@ source "$HOME/.bashrc"
 cat <<EOF > "${SCRIPT_DIR}/.sops.yaml"
 creation_rules:
   - path_regex: .*\.(yaml|yml|env|json|ini)$
-    encrypted_regex: '(?i).*(password|passwort|key|secret).*'
+    encrypted_regex: '(?i).*(id|token|ca|crt|password|passwort|key|secret).*'
     key_groups:
       - age:
           - $AGE_PUB_KEY
